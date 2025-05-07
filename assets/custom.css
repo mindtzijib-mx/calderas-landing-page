@@ -22,6 +22,104 @@ a {
     cursor: pointer;
 }
 
+/* Banner Publicitario Section */
+.banner-section {
+    padding: 40px 0;
+}
+
+.ad-banner {
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.banner-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.banner-content {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.banner-content:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://www.reformasintegrales.com/wp-content/uploads/2023/02/pexels-max-vakhtbovych-6758773-1-840x560.jpg') center center/cover;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.banner-content:hover {
+    transform: scale(1.02);
+}
+
+.banner-text {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+}
+
+.banner-text h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.banner-text p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.banner-text strong {
+    color: #f6bd09;
+    font-weight: 800;
+}
+
+.banner-cta {
+    display: inline-block;
+    background-color: #f6bd09;
+    color: #1a1a1a;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.banner-link:hover .banner-cta {
+    background-color: #fff;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    transform: translateY(-2px);
+}
 
 
 /* COLORS */
@@ -802,7 +900,7 @@ section.section-b.call-to-action {
 }
 
 .img-elegir-hidalgas {
-    background-image: url(https://hidalgas.es/assets/img/aire-acondicionado-caldera-domicilio-hidalgas.webp);
+    background-image: linear-gradient(to right bottom, #627e9b, #2C3E50);
     background-size: cover;
     background-position: center;
 }
@@ -2417,7 +2515,7 @@ a.btn-gris:hover {
 }
 
 #footer .logo-footer {
-    width: 198px;
+    width: 150px;
 }
 
 .txt-footer {
@@ -2488,7 +2586,7 @@ a.btn-gris:hover {
     ul#mainNav {
         width: 1250px !important;
         display: flex !important;
-        justify-content: space-between !important;
+        justify-content: center !important;
     }
 
     .vertical-divider {

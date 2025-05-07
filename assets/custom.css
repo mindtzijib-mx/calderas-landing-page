@@ -36,6 +36,19 @@ a {
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
+@media (max-width: 1200px) {
+    .ad-banner {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .ad-banner {
+        width: unset;
+    }
+    
+}
+
 .banner-link {
     display: block;
     width: 100%;

@@ -47,6 +47,18 @@ a {
     margin-bottom: 15px;
 }
 
+@media (max-width: 991px) {
+    .city-column {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .city-column {
+        grid-template-columns: 1fr;
+    }
+}
+
 .city-column a {
     border: 1px solid gray;
     padding: 20px;

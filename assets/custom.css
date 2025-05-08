@@ -36,6 +36,30 @@ a {
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
+.regions {
+    text-align: center;
+}
+
+.city-column {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.city-column a {
+    border: 1px solid gray;
+    padding: 20px;
+    display: block;
+    border-top: 5px solid var(--primary-color);
+    font-weight: bold;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 @media (max-width: 1200px) {
     .ad-banner {
         width: 70%;
